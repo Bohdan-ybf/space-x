@@ -1,0 +1,231 @@
+@media(max-width: 960px) {
+    .wrapper__content {
+
+        align-items: center;
+    }
+
+    .main__falcon-content {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .falcon__text {
+        margin-bottom: 50px;
+    }
+
+    .main__falcon-content {
+        margin-bottom: auto;
+    }
+}
+
+@media(max-width: 860px) {
+
+    .falcon__text-left>p,
+    .falcon__text-right>p {
+
+        font-size: 15px;
+
+    }
+}
+
+
+@media(max-width: 768px) {
+    .header__menu>li>a {
+        margin-right: 15px;
+    }
+
+    .header__nav>li>a {
+        margin-right: 15px;
+    }
+
+    .main__falcon-content {
+        margin-top: 50px;
+        align-items: flex-start;
+    }
+
+    .content__grid,
+    .wrapper__rocket {
+        width: auto;
+    }
+
+    .falcon__text {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media(max-width: 720px) {
+
+    .nav__mobile__menu {
+        display: block;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        padding: 35px 0;
+        background-color: #000000;
+        z-index: 10;
+    }
+
+
+    .header__nav {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 280px;
+        width: 280px;
+        transform: translateX(150%);
+    }
+
+    .header__nav {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 280px;
+        width: 280px;
+        transform: translateX(150%);
+        transition: all ease 1s;
+    }
+
+    .header__nav.active-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+        padding: 25px;
+        transform: translateX(0);
+
+        max-width: 100%;
+        width: 100%;
+        background-color: #272727;
+
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all ease .5s;
+
+    }
+
+    .header__nav.active-menu>li {
+        padding: 25px;
+        margin-bottom: 0;
+    }
+
+    .header__nav.active-menu>li>a {
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-right: 0px;
+
+    }
+
+    .main__title-content>img {
+        margin-bottom: 25px;
+    }
+
+    .main__title-content {
+        height: auto;
+    }
+
+    /* Gamburg menu */
+    .nav__mobile__menu {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        z-index: 20;
+
+    }
+
+    .nav__mobile__menu span {
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: all ease .3s;
+    }
+
+    .nav__mobile__menu span:first-child {
+        top: 3px;
+    }
+
+    .nav__mobile__menu span:nth-child(2) {
+        top: 7px;
+    }
+
+    .nav__mobile__menu span:last-child {
+        bottom: 3px;
+    }
+
+    /* rotate */
+    .nav__mobile__menu.active-menu span:first-child {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .nav__mobile__menu.active-menu span:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    .nav__mobile__menu.active-menu span:last-child {
+        transform: scale(0);
+    }
+
+
+    /* /////////////////////// */
+}
+
+@media(max-width: 525px) {
+    .wrapper__rocket {
+        display: none;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .main__title-content>h1 {
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+
+    .main__title-content>p {
+        width: 75%;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .main__title-content {
+        height: auto;
+    }
+
+    .falcon__text {
+        margin-bottom: auto;
+    }
+
+}
+
+@media(max-width: 390px) {
+
+    .falcon__text-left>p,
+    .falcon__text-right>p {
+        font-size: 9px;
+    }
+
+    .footer__wrapper__menu>p {
+        font-size: 14px;
+    }
+}
